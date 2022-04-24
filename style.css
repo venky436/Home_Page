@@ -15,7 +15,7 @@ html{
     justify-content: space-between;
     /* margin-top: 1rem; */
     padding: 1.5rem;
-    background-color: white;
+    background-color: rgba(0,0,0,1);
     /* box-shadow: 0.2px 0.3px 0.2px 0.3px black; */
 }
 .logo{
@@ -33,30 +33,36 @@ html{
 }
 .icons{
     display: flex;
-    margin-right: 3rem;
+    margin-right: 4rem;
 }
  .fab,.fa-info {
     display: block;
     font-size: 2rem;
-    margin : 0 0.3rem;
+    margin : 0 0.5rem;
     width: 5rem;
     height: 5rem;
     padding: 1rem;
     border-radius: 100%;
-    background-color: rgba(231, 149, 73,0.5);
+    /* background-color: rgba(21, 20, 18, 0.5); */
     line-height: 3rem;
     text-align: center;
+    cursor: pointer;
+    color: white;
+    transition: all 1s;
 
+}
+.fab:hover{
+    color: red;
 }
 #menu{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 3rem;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
-    color: gray;
+    color: white;
 }
 .fas{
     display: block;
@@ -68,7 +74,7 @@ html{
     display: block;
     width: 100%;
     height: 87vh;
-    background-color: rgba(172, 162, 162,0.6);
+    background-image: linear-gradient(to top,rgba(0,0,0,0.4),rgba(0,0,0,1));
     position: relative;
 }
 .matter{
@@ -100,6 +106,7 @@ html{
     /* display: flex; */
     margin-top: 2rem;
     padding: 1rem 0 ;
+    
 
 }
 .buttons button{
@@ -109,11 +116,19 @@ html{
     padding: 1.5rem;
     font-size: 1.5rem;
     margin: 0 1rem;
+    text-transform: uppercase;
+    background-color: white;
     border: 0;
+    transition: all 250ms;
+    cursor: pointer !important;
 }
-button:first-child{
-    background-color: rgba(204, 97, 25,0.5);
+.buttons button:hover{
+    background-color: black;
+    color: white;
 }
+/* button:first-child{
+    background-color: rgba(224, 224, 224, 1);
+} */
 /* after content */
 .main{
     display: block;
@@ -127,7 +142,7 @@ button:first-child{
 #text-main{
     width: 50%;
     height: 100%;
-    background-color: rgba(207, 200, 200,0.8);
+    background-color: rgba(207, 200, 200,0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,7 +171,13 @@ button:first-child{
     height: auto;
     padding: 1.1rem 3rem;
     font-size: 1.5rem;
+    border: 0;
     text-align: center;
+    background-color: white;
+    color: black;
+    margin: 1rem 0;
+    cursor: pointer;
+
 }
 
 /* Services */
@@ -193,6 +214,8 @@ button:first-child{
     display: block;
     font-size: 2rem;
     margin: 1.3rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
     /* text-align: right; */
 
 }
@@ -204,12 +227,13 @@ button:first-child{
 .col-icon .fas{
     width: 10rem;
     height: 10rem;
-    background-color: rgba(185, 130, 27, 0.822);
+    background-color: rgba(16, 15, 13, 1);
     border-radius: 100%;
     text-align: center;
     line-height: 10rem;
     font-size: 3.5rem;
     margin:0 2rem ;
+    color: white;
 }
 /* Testimony */
 .testimony-main{
@@ -221,6 +245,7 @@ button:first-child{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 8rem 0 ;
+  margin: 0 auto;
 }
 
 .testi-row-1 h1{
@@ -238,8 +263,9 @@ button:first-child{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 4rem;
+    padding: 2rem 2rem;
     border: 1px solid white;
+    margin: 0 0.5rem;
 
 }
 .col-testi .far{
@@ -412,7 +438,7 @@ form button{
     left: 0;
     opacity: 0;
     user-select: none;
-    transition: all 220ms;
+    transition: all 280ms;
 
 }
 .menu.active{
@@ -435,6 +461,7 @@ form button{
 }
 .items li:hover{
     color: orange;
+    margin-right: 0.5px;
 }
 .items li:first-child{
     color: orange;
